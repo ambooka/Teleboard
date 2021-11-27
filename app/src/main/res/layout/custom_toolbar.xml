@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:colorPickerView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.msah.teleboard.colorpicker.ColorPickerView
+        android:id="@+id/rteColorPalette"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        colorPickerView:colorViewHeight="30dp"
+        colorPickerView:colorViewWidth="30dp"
+        colorPickerView:colorViewMarginLeft="2dp"
+        colorPickerView:colorViewMarginRight="2dp"
+        colorPickerView:colorViewCheckedType="checkMark"
+        colorPickerView:colors="@array/colorPickerColors"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="?attr/colorPrimary">
+
+            <ImageView
+                android:id="@+id/rteEmoji"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_insert_emoticon_24"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/rteFontsize"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_format_size_24"
+                android:visibility="visible"
+                />
+
+            <ImageView
+                android:id="@+id/rteFontface"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_colorize_24"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/rteBold"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_format_bold_24" />
+
+            <ImageView
+                android:id="@+id/rteItalic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_format_italic_24" />
+
+            <ImageView
+                android:id="@+id/rteUnderline"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_format_underlined_24" />
+
+            <ImageView
+                android:id="@+id/rteStrikethrough"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_strikethrough_s_24" />
+
+            <ImageView
+                android:id="@+id/rteHr"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_horizontal_rule_24" />
+
+
+            <ImageView
+                android:id="@+id/rteSubscript"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_subscript_24" />
+
+            <ImageView
+                android:id="@+id/rteSuperscript"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_superscript_24" />
+
+            <ImageView
+                android:id="@+id/rteQuote"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_format_quote_24" />
+
+
+            <ImageView
+                android:id="@+id/rteFontColor"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_color_lens_24" />
+
+            <ImageView
+                android:id="@+id/rteBackground"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_color_lens_24"
+                />
+
+            <ImageView
+                android:id="@+id/rteLink"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_insert_link_24"
+                />
+
+            <ImageView
+                android:id="@+id/rteListNumber"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_format_list_numbered_24" />
+
+            <ImageView
+                android:id="@+id/rteListBullet"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_format_list_bulleted_24" />
+
+            <ImageView
+                android:id="@+id/rteIndentRight"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_format_indent_decrease_24"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/rteIndentLeft"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_format_indent_increase_24"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/rteAlignLeft"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_format_align_left_24" />
+
+            <ImageView
+                android:id="@+id/rteAlignCenter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_format_align_center_24" />
+
+            <ImageView
+                android:id="@+id/rteAlignRight"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_format_align_right_24" />
+
+            <ImageView
+                android:id="@+id/rteInsertImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_image_24" />
+
+            <ImageView
+                android:id="@+id/rteInsertVideo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_play_circle_outline_24"
+                />
+
+            <ImageView
+                android:id="@+id/rteAt"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_alternate_email_24"
+                android:visibility="gone" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout
+        android:id="@+id/rteEmojiPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:visibility="gone"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+</merge>

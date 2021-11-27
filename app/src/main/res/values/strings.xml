@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Teleboard</string>
+    <string name="boards">Boards</string>
+    <string name="notes">Notes</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="username">User name</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="login">Login</string>
+    <string name="login_preferences" translatable="false">com.msah.insight.utils.SharedPreference</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="link_title">Link title</string>
+    <string name="save_to_local">Save to local</string>
+
+    <string name="facebook_app_id">1116812078713469</string>
+    <string name="fb_login_protocol_scheme">fb1116812078713469</string>
+
+    <string name="enter_address_or_search">Enter address or search</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="are_link_title">Link</string>
+    <string name="are_link_insert_hint">Insert a link</string>
+    <string name="are_image_insert_hint">Insert an image</string>
+
+
+    <string name="title_activity_are__video_player">ARE Video</string>
+    <string name="btn_attach_video">Attach Video</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_default_image_preview">ARE DefaultImagePreviewActivity</string>
+    <string name="action_new_board">New Board</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="content_step_0">Step 0</string>
+    <string name="content_step_1">Step 1</string>
+    <string name="content_step_2">Step 2</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="folder_all">所有图片</string>
+    <string name="folder_first">背景素材</string>
+    <string name="sketch_count_alert">画板已达最大数量</string>
+
+    <string name="msg_no_camera">No system camera found</string>
+    <string name="msg_amount_limit">Select images amount is limit</string>
+    <string name="action_done">Done</string>
+    <string name="action_button_string">%1$s(%2$d/%3$d)</string>
+    <string name="photo_unit">Shot</string>
+    <string name="error_image_not_exist">Image error</string>
+    <string name="error_no_permission">Has no permission</string>
+    <string name="permission_dialog_title">Permission Deny</string>
+    <string name="permission_dialog_ok">OK</string>
+    <string name="permission_dialog_cancel">CANCEL</string>
+    <string name="permission_rationale_write_storage">Storage write permission is needed to save the image.</string>
+</resources>
