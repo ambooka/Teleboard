@@ -2,6 +2,7 @@ package com.msah.teleboard;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Application;
 import android.graphics.Typeface;
 import android.os.Bundle;
 
@@ -25,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
     public static SharedPreference sharedPreference;
-    public static FragmentManager fragmentManager;
-    public static Class fragClass;
     private static FirebaseDatabase firebaseDatabase;
     private FirebaseUser firebaseUser;
 
@@ -36,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+
 
         if (firebaseDatabase == null) {
             firebaseDatabase = FirebaseDatabase.getInstance();
@@ -125,9 +125,8 @@ public class MainActivity extends AppCompatActivity {
             getSupportFragmentManager().popBackStack();
         }else if(fragmentInStack == 1){
             // Finish activity, only if one fragment left to prevent leaving screen empty
-            finish();
         }else{
-            super.onBackPressed();
+
         }
     }
 }

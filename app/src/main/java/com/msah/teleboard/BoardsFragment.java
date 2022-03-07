@@ -138,6 +138,7 @@ public class BoardsFragment extends Fragment {
                 ((TextView)v.findViewById(R.id.board_title)).setText(key);
 
                 // show if the board is synced and listen for clicks to toggle that state
+                /**
                 CheckBox checkbox = (CheckBox) v.findViewById(R.id.keepSynced);
                 checkbox.setChecked(SyncedBoardManager.isSynced(key));
                 checkbox.setOnClickListener(new View.OnClickListener() {
@@ -146,6 +147,7 @@ public class BoardsFragment extends Fragment {
                         SyncedBoardManager.toggle(mSegmentsRef, key);
                     }
                 });
+                 **/
 
                 // display the board's thumbnail if it is available
                 ImageView thumbnailView = (ImageView) v.findViewById(R.id.board_thumbnail);
@@ -246,6 +248,9 @@ public class BoardsFragment extends Fragment {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
+
+
             return true;
         }
 

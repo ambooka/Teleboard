@@ -6,54 +6,55 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:theme="@style/Theme.AppCompat.Light">
 
-
-    <!-- TODO: Create a cardView style -->
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="1dp"
-        android:checkable="false"
-        android:focusable="false"
-        android:foreground="?attr/selectableItemBackground"
-        android:elevation="1dp"
-        >
+        android:layout_margin="8dp">
+
       <androidx.appcompat.widget.LinearLayoutCompat
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           android:orientation="vertical">
-          <TextView
+
+          <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="150dp"
+              android:id="@+id/board_thumbnail"
+              android:layout_margin="@dimen/abc_action_bar_icon_vertical_padding_material" />
+
+          <View
               android:layout_width="wrap_content"
+              android:layout_height="1dp"
+              android:background="@color/primary"/>
+          <androidx.appcompat.widget.LinearLayoutCompat
+              android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:textAppearance="?android:attr/textAppearanceLarge"
-              android:text="Large Text"
-              app:layout_constraintTop_toTopOf="parent"
-              app:layout_constraintLeft_toLeftOf="parent"
-              android:id="@+id/board_title"
-              android:layout_weight="0.11" />
+              android:orientation="vertical"
+              android:padding="16dp"
+              android:background="@color/widget">
 
-    <TextView
-        android:id="@+id/board_creator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Creator" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:text="Large Text"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  android:id="@+id/board_title"
+                  android:layout_weight="0.11" />
+
+              <TextView
+                  android:id="@+id/board_creator"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Creator" />
 
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/board_thumbnail"
-        android:layout_margin="@dimen/abc_action_bar_icon_vertical_padding_material"
-       />
+          </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Keep in sync"
-        android:focusable="false"
-        android:id="@+id/keepSynced"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
 
-      </androidx.appcompat.widget.LinearLayoutCompat>
-    </androidx.cardview.widget.CardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
 </RelativeLayout>

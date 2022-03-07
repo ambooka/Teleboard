@@ -127,8 +127,8 @@ public class BottomNavigationView extends RelativeLayout {
             shadowHeight = (int) getResources().getDimension(R.dimen.bottom_navigation_shadow_height);
         } else {
             if (itemActiveColorWithoutColoredBackground == -1)
-                itemActiveColorWithoutColoredBackground = ContextCompat.getColor(context, R.color.itemActiveColorWithoutColoredBackground);
-            itemInactiveColor = ContextCompat.getColor(context, R.color.withoutColoredBackground);
+                itemActiveColorWithoutColoredBackground = ContextCompat.getColor(context, R.color.primary);
+            itemInactiveColor = ContextCompat.getColor(context, R.color.grey);
             shadowHeight = (int) getResources().getDimension(R.dimen.bottom_navigation_shadow_height_without_colored_background);
         }
         if (isTablet) {
